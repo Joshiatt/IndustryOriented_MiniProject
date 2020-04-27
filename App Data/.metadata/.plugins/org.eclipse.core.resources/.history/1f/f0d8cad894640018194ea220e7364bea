@@ -1,0 +1,14 @@
+package com.example.databasesmaple2;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class DBHandler extends SQLiteOpenHelper{
+
+	public DBHandler(Context context) {
+		super(context, "college", null, 1);
+		// TODO Auto-generated constructor stub
+	}
+
+}

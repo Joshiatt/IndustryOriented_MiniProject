@@ -1,0 +1,8 @@
+package com.example.databasesample;
+
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class DBHandler extends SQLiteOpenHelper {
+
+	
+}

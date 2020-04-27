@@ -1,0 +1,27 @@
+package com.example.databasesmaple2;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class DBHandler extends SQLiteOpenHelper{
+
+	public DBHandler(Context context) {
+		super(context, "college", null, 1);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		// TODO Auto-generated method stub
+		db.execSQL("create table if not exists student(name varchar(10),email varchar(20),addr varchar(30))");
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase arg0, int arg1, int arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
